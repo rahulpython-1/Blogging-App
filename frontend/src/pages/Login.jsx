@@ -33,7 +33,16 @@ const Login = () => {
 	};
 	return (
 		<div className=' flex items-center justify-center h-screen'>
-			<div className='w-full max-w-sm p-6 max-md:m-6 border border-primary/30 shadow-xl shadow-primary/15 rounded-lg'>
+			<div className='w-full max-w-sm p-6 max-md:m-6 border border-primary/30 shadow-xl shadow-primary/15 rounded-lg relative'>
+				<button
+					onClick={() => navigate('/')}
+					className='absolute top-4 left-4 p-2 text-gray-600 hover:text-primary transition-colors'
+					aria-label='Back to homepage'
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+					</svg>
+				</button>
 				<div className='flex flex-col items-center justify-center '>
 					<div className='w-full py-6 text-center'>
 						<h1 className='text-3xl font-bold'>

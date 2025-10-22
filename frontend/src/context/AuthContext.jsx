@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 	const [loading, setLoading] = useState(true);
 	const [token, setToken] = useState(localStorage.getItem("token") || null);
 
-	const API_URL = "https://blogging-app-t2gn.onrender.com/api";
+  const API_URL = 'https://blogging-app-t2gn.onrender.com/api';
 
 	// Configure axios defaults
 	axios.defaults.baseURL = API_URL;

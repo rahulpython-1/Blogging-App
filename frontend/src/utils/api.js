@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import axios from "axios";
 import.meta.env;
 const API_URL = "https://blogging-app-t2gn.onrender.com/api";
+=======
+import axios from 'axios';
+
+const API_URL = 'https://blogging-app-t2gn.onrender.com/api';
+>>>>>>> b9251f7157329a242801d829d62fff0f49889a83
 
 const api = axios.create({
 	baseURL: API_URL,
