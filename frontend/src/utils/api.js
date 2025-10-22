@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import.meta.env;
 const API_URL = "https://blogging-app-t2gn.onrender.com/api";
 
 const api = axios.create({
